@@ -37,7 +37,7 @@ type fakeString struct {
 	content string
 }
 
-// function used to implement the Stringer interface
+// String: function used to implement the Stringer interface
 func (s *fakeString) String() string {
 	return s.content
 }

@@ -15,7 +15,7 @@ type MapSF struct {
 // to sort by value
 type MapSFList []MapSF
 
-// sort.Interface
+// Swap: sort.Interface
 // Define our custom sort: Swap, Len, Less
 func (p MapSFList) Swap(i, j int) { p[i], p[j] = p[j], p[i] }
 func (p MapSFList) Len() int      { return len(p) }

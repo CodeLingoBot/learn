@@ -11,7 +11,7 @@ func (s intMinHeap) Len() int           { return len(s) }
 func (s intMinHeap) Less(i, j int) bool { return s[i] < s[j] }
 func (s intMinHeap) Swap(i, j int)      { s[i], s[j] = s[j], s[i] }
 
-//use pointer receivers
+// Push: use pointer receivers
 // because they modify the slice's length,
 func (s *intMinHeap) Push(val interface{}) {
 	*s = append(*s, val.(int))

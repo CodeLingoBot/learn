@@ -28,8 +28,7 @@ type KVStoreJSONRPC struct {
 	store map[string][]byte
 }
 
-/*
-Register publishes in the server the set of methods of the receiver value that satisfy the following conditions:
+/* Put: Register publishes in the server the set of methods of the receiver value that satisfy the following conditions:
 
 - exported method of exported type
 - two arguments, both of exported type

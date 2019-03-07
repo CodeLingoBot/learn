@@ -42,7 +42,7 @@ type writerWrapper struct {
 	io.Writer
 }
 
-// in case io.Writer does not implement Sync
+// Sync: in case io.Writer does not implement Sync
 // (if io.Writer implements Sync (like *os.File), this does not get called)
 func (w writerWrapper) Sync() error {
 	fmt.Println("calling writerWrapper.Sync")
